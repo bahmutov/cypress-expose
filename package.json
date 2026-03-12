@@ -1,0 +1,20 @@
+{
+  "name": "cypress-expose",
+  "version": "1.0.0",
+  "description": "Expose public variables via CYPRESS_EXPOSE process variables",
+  "main": "index.js",
+  "scripts": {
+    "dev": "CYPRESS_EXPOSE=PUBLIC_VARIABLE_1,PUBLIC_VARIABLE_2,PUBLIC_VARIABLE_3 cypress open",
+    "test": "CYPRESS_EXPOSE=PUBLIC_VARIABLE_1,PUBLIC_VARIABLE_2,PUBLIC_VARIABLE_3 cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^15.11.0",
+    "prettier": "^3.8.1"
+  },
+  "dependencies": {
+    "to-camel-case": "^1.0.0"
+  }
+}
