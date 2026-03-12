@@ -7,7 +7,7 @@ const camel = require('to-camel-case')
 function cypressExpose(config) {
   config.expose = config.expose || {}
 
-  console.log(config.env)
+  // console.log(config.env)
 
   Object.entries(config.env).forEach(([key, value]) => {
     if (key.startsWith('EXPOSE_')) {
