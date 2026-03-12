@@ -94,6 +94,8 @@ module.exports = defineConfig({
 
 There will be no `cy.env('me')` value, instead you can get it via `Cypress.expose('me') // true`
 
+Exposed variables will have the `null` value set in the `cy.env` object.
+
 ## Examples
 
 - [bahmutov/cypress-expose-example](https://github.com/bahmutov/cypress-expose-example)
