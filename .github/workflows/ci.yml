@@ -25,11 +25,13 @@ jobs:
         # https://github.com/cypress-io/github-action
         uses: cypress-io/github-action@v7
         env:
+          # note: the variables will be normalized to camel case
           CYPRESS_EXPOSE_PUBLIC_VARIABLE_1: foo
           CYPRESS_EXPOSE_PUBLIC_VARIABLE_2: bar
           CYPRESS_EXPOSE_PUBLIC_VARIABLE_3: baz
           # default CI variable
           CYPRESS_EXPOSE_CI: true
+          CYPRESS_EXPOSE_CI_NAME: 'GitHub Actions'
 
       - name: Semantic Release 🚀
         if: github.ref == 'refs/heads/main'
