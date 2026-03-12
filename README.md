@@ -68,6 +68,32 @@ Cypress.expose()
 // }
 ```
 
+The same approach works for keys starting with `expose` inside the `env` object
+
+```js
+const { defineConfig } = require('cypress')
+const cypressExpose = require('cypress-expose')
+
+module.exports = defineConfig({
+  allowCypressEnv: false,
+  e2e: {
+    env: {
+      exposeMe: true,
+    },
+
+    setupNodeEvents(on, config) {
+      cypressExpose(config)
+
+      // IMPORTANT: return the config object
+      // to let Cypress know we modified it
+      return config
+    },
+  },
+})
+```
+
+There will be no `cy.env('me')` value, instead you can get it via `Cypress.expose('me') // true`
+
 ## Examples
 
 - [bahmutov/cypress-expose-example](https://github.com/bahmutov/cypress-expose-example)
