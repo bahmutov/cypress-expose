@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Expose public variables via CYPRESS_EXPOSE process variables",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "dev": "CYPRESS_EXPOSE_PUBLIC_VARIABLE_1=foo CYPRESS_EXPOSE_PUBLIC_VARIABLE_2=bar CYPRESS_EXPOSE_PUBLIC_VARIABLE_3=baz cypress open",
     "test": "CYPRESS_EXPOSE_PUBLIC_VARIABLE_1=foo CYPRESS_EXPOSE_PUBLIC_VARIABLE_2=bar CYPRESS_EXPOSE_PUBLIC_VARIABLE_3=baz cypress run"
