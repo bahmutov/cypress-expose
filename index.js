@@ -1,4 +1,10 @@
-module.expose = function (config) {
+// @ts-check
+const camel = require('to-camel-case')
+
+/**
+ * @param {Cypress.PluginConfigOptions} config
+ */
+function cypressExpose(config) {
   config.expose = config.expose || {}
 
   Object.entries(config.env).forEach(([key, value]) => {
@@ -10,3 +16,5 @@ module.expose = function (config) {
     }
   })
 }
+
+module.exports = cypressExpose

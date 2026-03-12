@@ -4,8 +4,8 @@
   "description": "Expose public variables via CYPRESS_EXPOSE process variables",
   "main": "index.js",
   "scripts": {
-    "dev": "CYPRESS_EXPOSE=PUBLIC_VARIABLE_1,PUBLIC_VARIABLE_2,PUBLIC_VARIABLE_3 cypress open",
-    "test": "CYPRESS_EXPOSE=PUBLIC_VARIABLE_1,PUBLIC_VARIABLE_2,PUBLIC_VARIABLE_3 cypress run"
+    "dev": "CYPRESS_EXPOSE_PUBLIC_VARIABLE_1=foo CYPRESS_EXPOSE_PUBLIC_VARIABLE_2=bar CYPRESS_EXPOSE_PUBLIC_VARIABLE_3=baz cypress open",
+    "test": "CYPRESS_EXPOSE_PUBLIC_VARIABLE_1=foo CYPRESS_EXPOSE_PUBLIC_VARIABLE_2=bar CYPRESS_EXPOSE_PUBLIC_VARIABLE_3=baz cypress run"
   },
   "keywords": [],
   "author": "",

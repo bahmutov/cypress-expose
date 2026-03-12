@@ -2,6 +2,7 @@ const { defineConfig } = require('cypress')
 const cypressExpose = require('./index')
 
 module.exports = defineConfig({
+  allowCypressEnv: false,
   e2e: {
     // baseUrl, etc
     supportFile: false,
