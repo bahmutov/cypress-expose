@@ -23,5 +23,9 @@
   },
   "dependencies": {
     "to-camel-case": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahmutov/cypress-expose.git"
   }
 }
