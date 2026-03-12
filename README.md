@@ -2,6 +2,8 @@
 
 > Expose public variables via CYPRESS_EXPOSE process variables
 
+📝 Read the blog post [Public Environment Variables For Your Tests Using cypress-expose Plugin](https://glebbahmutov.com/blog/cypress-expose-plugin/).
+
 ## Install
 
 ```shell
