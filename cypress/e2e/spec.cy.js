@@ -16,5 +16,6 @@ describe('cypress-expose', () => {
   it('deletes the exposed variables from cy.env', () => {
     cy.env(['me']).should('deep.equal', {})
     cy.wrap(Cypress).invoke('expose', 'me').should('equal', true)
+    cy.env(['exposeMe']).should('deep.equal', { exposeMe: null })
   })
 })
